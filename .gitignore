@@ -1,0 +1,11 @@
+# 1. Ignorar absolutamente todo en el proyecto
+/*
+
+# 2. Excepciones: Carpetas que SÍ queremos subir
+!/Scripts/
+!/Docker/
+!/Docs/
+
+# 3. Excepciones de archivos clave (Muy recomendado)
+!.gitignore
+!README.md
