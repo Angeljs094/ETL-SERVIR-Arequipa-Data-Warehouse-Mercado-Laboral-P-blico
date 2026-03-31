@@ -81,7 +81,7 @@ El archivo `docker-compose.yml` aprovisiona y orquesta los siguientes servicios 
   * `redis:7.2`: Broker de mensajería para gestionar las colas de tareas de Celery.
 * **Nodo de Scraping:**
   * `selenium-chrome`: Contenedor *standalone* (`selenium/standalone-chrome:latest`) aislado con 2GB de memoria compartida, encargado de ejecutar la navegación *headless* en el portal de SERVIR de manera invisible y escalable.
-
+```
 ---
 
 ### 🚀 Instrucciones de Despliegue Local
