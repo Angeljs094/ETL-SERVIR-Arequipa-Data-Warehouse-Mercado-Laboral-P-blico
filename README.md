@@ -47,7 +47,7 @@ Es el "corazón" lógico del proyecto. Un pipeline en Pandas que procesa los dat
 
 La arquitectura del código separa claramente la lógica de negocio (extracciones y transformaciones) de la lógica de orquestación (DAGs de Airflow) y la infraestructura.
 
-```text
+
 ├── dags/
 │   ├── master_dag.py               # Orquestador principal (TriggerDagRunOperator)
 │   ├── extraccion_dag.py           # DAG de scraping y carga a Staging
@@ -81,17 +81,6 @@ El archivo `docker-compose.yml` aprovisiona y orquesta los siguientes servicios 
   * `redis:7.2`: Broker de mensajería para gestionar las colas de tareas de Celery.
 * **Nodo de Scraping:**
   * `selenium-chrome`: Contenedor *standalone* (`selenium/standalone-chrome:latest`) aislado con 2GB de memoria compartida, encargado de ejecutar la navegación *headless* en el portal de SERVIR de manera invisible y escalable.
-```
----
-
-### 🚀 Instrucciones de Despliegue Local
-
-Sigue estos pasos para levantar el Data Warehouse en tu propia máquina en cuestión de minutos:
-
-**1. Clonar el repositorio y ubicarse en la carpeta raíz:**
-```bash
-git clone [https://github.com/Angeljs094/TUREPOSITORIO.git](https://github.com/Angeljs094/TUREPOSITORIO.git)
-cd TUREPOSITORIO
 
 ---
 
