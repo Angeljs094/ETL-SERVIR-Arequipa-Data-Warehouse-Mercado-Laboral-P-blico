@@ -47,7 +47,7 @@ Es el "corazón" lógico del proyecto. Un pipeline en Pandas que procesa los dat
 
 La arquitectura del código separa claramente la lógica de negocio (extracciones y transformaciones) de la lógica de orquestación (DAGs de Airflow) y la infraestructura.
 
-
+```Text
 ├── dags/
 │   ├── master_dag.py               # Orquestador principal (TriggerDagRunOperator)
 │   ├── extraccion_dag.py           # DAG de scraping y carga a Staging
@@ -63,7 +63,7 @@ La arquitectura del código separa claramente la lógica de negocio (extraccione
 ├── docker-compose.yml              # Infraestructura (Airflow, Postgres, Redis, Selenium)
 ├── requirements.txt                # Dependencias de Python (pandas, selenium, sqlalchemy, etc.)
 └── README.md                       # Documentación del proyecto.
-
+```
 
 ## 🐳 Contenerización y Reproducibilidad (Docker)
 
